@@ -1,0 +1,8 @@
+colors.scheme=tst
+visualizer.spectrum.color.scheme=tst
+visualizer.spectrum.bar.width=1 
+visualizer.spectrum.bar.spacing=1
+visualizer.spectrum.top.margin=0.10 
+visualizer.spectrum.bottom.margin=0.10 
+visualizer.spectrum.left.margin=0.0 
+visualizer.spectrum.right.margin=0.0 
