@@ -1,0 +1,8 @@
+alias swp="swww img ~/Images/wallpaper.jpg"
+alias discord="discord --enable-features=WaylandWindowDecorations --ozone-platform-hint=auto"
+alias ls="ls -A --color=auto"
+alias jabra4="bluetoothctl connect 08:C8:C2:C8:6F:73"
+alias aroot="cd ~/AFIT/epita-prepa-mathematics-afit-2028-mael.minard"
+alias alogs="cd ~/AFIT/epita-prepa-mathematics-afit-2028-mael.minard/_build/default/Source/tests/builtin/_build/_tests"
+alias dune-ft="dune clean && dune build && dune runtest"
+alias jabra="bluetoothctl connect 08:C8:C2:C8:6F:73"
