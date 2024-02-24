@@ -1,6 +1,6 @@
-### <center>![](https://media.tenor.com/4VY0Ykn4lN4AAAAM/cat-broken-cat.gif "stupid cat") </center>
+### <h3 align="center">![](https://media.tenor.com/4VY0Ykn4lN4AAAAM/cat-broken-cat.gif "stupid cat") </h3>
 
-# <center> My Dotfiles :-) </center>
+# <h1 align="center"> My Dotfiles :-) </h1>
 
 >## **packages required :**
 >* foot
