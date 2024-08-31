@@ -7,16 +7,16 @@
 >* hyprland
 >* neofetch
 >* rofi
+>* thunar
 >* waybar
->* vis
->* wlogout
->* swaylock
+>* waypaper
+>* pywal
 >* nvchad
->* swww
+>* alsa, amixer
 >* gamastep
 >* grimshot
 >* backlight_control
->* bluetoothctl
->* zoxide
+>* swaylock
+>* sddm, corners theme
 
 thank you for downloading
