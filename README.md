@@ -30,5 +30,5 @@ run the make_links.sh script
 cd dotfiles-arch
 ./make_links.sh
 ```
-wallpapers can be added manually
+wallpapers can be added manually\
 sddm theme can be added manually
