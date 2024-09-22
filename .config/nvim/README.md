@@ -9,6 +9,9 @@
 - telescope
 - treesitter
 - mason with lsp-config
+- none-ls
+- nvim-cmp with Luasnip, friendlysnippets and Nvim-cmp-lsp
+- dashboard
 
 ## sensible options
 - relative line numbers
@@ -16,8 +19,9 @@
 
 ## remaps
 - easily switch between buffers with tab
-- easily close buffers with Ctrl+C
-- easily save modifications with Ctrl+S
+- easily close buffers with Ctrl+c
+- easily save modifications with Ctrl+s
+- open floating diagnostics with Ctrl+d
 
 ## color schemes
 - rose-pine (default)
