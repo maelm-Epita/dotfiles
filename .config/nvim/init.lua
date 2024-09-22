@@ -1,24 +1,15 @@
-require "core"
+-- basic options
+vim.cmd("set expandtab")
+vim.cmd("set tabstop=2")
+vim.cmd("set softtabstop=2")
+vim.cmd("set shiftwidth=2")
+-- relativenb
+vim.cmd("set relativenumber")
 
-local custom_init_path = vim.api.nvim_get_runtime_file("lua/custom/init.lua", false)[1]
+-- remaps
+vim.keymap.set('n', '<Tab>', ':bn<CR>')
+vim.keymap.set('n', '<C-c>', ':bd<CR>')
+vim.keymap.set('n', '<C-s>', ':w<CR>')
 
-if custom_init_path then
-  dofile(custom_init_path)
-end
-
-require("core.utils").load_mappings()
-
-local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
-
--- bootstrap lazy.nvim!
-if not vim.loop.fs_stat(lazypath) then
-  require("core.bootstrap").gen_chadrc_template()
-  require("core.bootstrap").lazy(lazypath)
-end
-
-dofile(vim.g.base46_cache .. "defaults")
-vim.opt.rtp:prepend(lazypath)
-require "plugins"
-
--- mason
-require("mason").setup()
+-- lazy
+require("config.lazy")

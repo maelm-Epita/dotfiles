@@ -3,8 +3,11 @@ PROMPT_COMMAND='PS1_CMD1=$(git branch 2>/dev/null | grep '"'"'*'"'"' | colrm 1 2
 
 wal -R -q
 
-
 #alises
 if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
 fi
+
+#eval
+eval "$(fzf --bash)"
+export FZF_DEFAULT_COMMAND='rg --files --hidden'

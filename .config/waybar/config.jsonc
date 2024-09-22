@@ -24,7 +24,7 @@
         "custom/power"
     ],
     "clock": {
-        // "timezone": "America/New_York",
+        "timezone": "Etc/UTC",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
@@ -38,7 +38,7 @@
     },
     "backlight/slider": {
         // "device": "acpi_video1",
-        "min":10,
+        "min":5,
         "format": "{percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
@@ -69,14 +69,14 @@
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon} {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
+        "format-bluetooth-muted": "{icon} {format_source}",
+        "format-muted": "✖ {format_source}",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
-            "hands-free": "",
-            "headset": "",
+            "hands-free": "☊",
+            "headset": "☊",
             "phone": "",
             "portable": "",
             "car": "",
