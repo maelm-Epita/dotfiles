@@ -2,21 +2,33 @@
 
 # <h1 align="center"> My Dotfiles :-) </h1>
 
->## **packages required :**
->* foot
->* hyprland
->* neofetch
->* rofi
+>## **packages configured:**
 >* thunar
+>* btop
+>* cava
+>* fcitx
+>* foot
+>* gtk
+>* hyprland
+>* mozc
+>* nvim
+>* rofi
+>* swaylock
+>* wal
 >* waybar
 >* waypaper
->* pywal
->* nvchad
+
+>## **dependencies:**
 >* alsa, amixer
 >* gamastep
 >* grimshot
 >* backlight_control
->* swaylock
->* sddm, corners theme
 
-thank you for downloading
+## install
+run the make_links.sh script
+```
+cd dotfiles-arch
+./make_links.sh
+```
+wallpapers can be added manually
+sddm theme can be added manually
