@@ -1,0 +1,81 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "sixel",
+    "source": "/home/mael/Images/autre/monoe.jpg",
+    "width": 40,
+    "padding": {
+      "top" : 2
+    }
+  },
+  "modules": [
+    "title",
+    {
+      "type": "uptime",
+      "key": "ut"
+    },
+    "separator",
+    {
+      "type": "host",
+      "key": "host"
+    },
+    {
+      "type": "os",
+      "key": "os"
+    },
+    {
+      "type": "terminal",
+      "key": "term"
+    },
+    {
+      "type": "shell",
+      "key": "shell"
+    },
+    {
+      "type": "locale",
+      "key": "locale"
+    },
+    {
+      "type": "break",
+      "key": ""
+    },
+    {
+      "type": "packages",
+      "key": "pkgs"
+    },
+    {
+      "type": "wm",
+      "key": "wm"
+    },
+    {
+      "type": "theme",
+      "key": "theme"
+    },
+    {
+      "type": "icons",
+      "key": "icons"
+    },
+    {
+      "type": "font",
+      "key": "font"
+    },
+    {
+      "type": "break",
+      "key": ""
+    },
+    {
+      "type": "battery",
+      "key": "bat"
+    },
+    {
+      "type": "disk",
+      "key": "dsk"
+    },
+    {
+      "type": "memory",
+      "key": "mem"
+    },
+    "break",
+    "colors"
+  ]
+}

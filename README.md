@@ -17,6 +17,7 @@
 >* wal
 >* waybar
 >* waypaper
+>* fastfetch
 
 ## **dependencies:**
 >* alsa, amixer
