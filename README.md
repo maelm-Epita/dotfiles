@@ -2,7 +2,7 @@
 
 # <h1 align="center"> My Dotfiles :-) </h1>
 
->## **packages configured:**
+## **packages configured:**
 >* thunar
 >* btop
 >* cava
@@ -18,7 +18,7 @@
 >* waybar
 >* waypaper
 
->## **dependencies:**
+## **dependencies:**
 >* alsa, amixer
 >* gamastep
 >* grimshot
