@@ -41,6 +41,6 @@ run the make_links.sh script
 cd dotfiles/
 ./make_links.sh
 ```
--> the name of the available themes are the names of subdirectories in the dotfiles/ directory
+-> the names of the available themes are the names of subdirectories in the dotfiles/ directory
 ### Warning : this script is not safe and calls dangerous commands such as rm -rf.
 ### make sure it is able to find all the files it needs to, don't install nixos config onto another distro, and don't name files anything stupid such as "*" or "/".
