@@ -2,7 +2,7 @@
 
 # <h1 align="center"> My Dotfiles :-) </h1>
 
-## Theme
+## <h2 align="center"> Themes </h2>
 ### nixos
 ### arch
 Themes use shared configurations.
@@ -26,7 +26,7 @@ Themes use shared configurations.
 >* sddm
 >* all shared dotfiles
 
-## Nixos : 
+## Nixos 
 ### **dotfiles**
 >* home-manager
 >* hypr
@@ -41,7 +41,6 @@ run the make_links.sh script
 cd dotfiles/
 ./make_links.sh
 ```
-the name of the available themes are the names of subdirectories in the dotfiles/ directory
+-> the name of the available themes are the names of subdirectories in the dotfiles/ directory
 ### Warning : this script is not safe and calls dangerous commands such as rm -rf.
-### make sure it is able to find all the files it needs to, don't install nixos config onto another distro,
-### and don't name files anything stupid such as "*" or "/".
+### make sure it is able to find all the files it needs to, don't install nixos config onto another distro, and don't name files anything stupid such as "*" or "/".
