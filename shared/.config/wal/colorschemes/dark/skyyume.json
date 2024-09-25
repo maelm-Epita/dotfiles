@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/mael/Images/wallpapers/skyyume.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#190c0a",
+        "foreground": "#e8e6e3",
+        "cursor": "#e8e6e3"
+    },
+    "colors": {
+        "color0": "#190c0a",
+        "color1": "#966752",
+        "color2": "#68889F",
+        "color3": "#A5A9AA",
+        "color4": "#CBB6A9",
+        "color5": "#E0CDB6",
+        "color6": "#DADDDE",
+        "color7": "#e8e6e3",
+        "color8": "#a2a19e",
+        "color9": "#966752",
+        "color10": "#68889F",
+        "color11": "#A5A9AA",
+        "color12": "#CBB6A9",
+        "color13": "#E0CDB6",
+        "color14": "#DADDDE",
+        "color15": "#e8e6e3"
+    }
+}

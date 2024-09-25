@@ -169,7 +169,7 @@ if [[ "$theme" == "nixos" ]]
 then
   for el in "${dotnix[@]}"
   do 
-    sudo ln "${options[@]}" ./.config/${el} "/etc/nixos/${el}"
+    sudo ln "${options[@]}" ./nixos/${el} "/etc/nixos/${el}"
     ((linkcount++))
   done
 fi
