@@ -15,6 +15,7 @@ Themes use shared configurations.
 >* mozc
 >* nvim
 >* waypaper
+>* foot
 
 ## Arch
 ### **dotfiles**
