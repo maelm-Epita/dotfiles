@@ -29,7 +29,9 @@
 run the make_links.sh script
 ```
 cd dotfiles-arch
-./make_links.sh
+./make_links.sh "{theme_name}"
 ```
-wallpapers can be added manually\
-sddm theme can be added manually
+where {theme_name} is the name of a subdirectory in the dotfiles/ directory
+### Warning : this script is not safe and calls dangerous commands such as rm -rf.
+### make sure it is able to find all the files it needs to, don't install nixos config onto another distro,
+### and don't name files anything stupid such as "*" or "/".

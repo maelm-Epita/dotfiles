@@ -1,0 +1,240 @@
+@define-color main-bg rgba(23, 19, 34, 1);
+@define-color text rgba(202, 197, 212, 1);
+@define-color highlight rgba(225, 215, 255, 0.25);
+@define-color bar-bg rgba(0, 0, 0, 0.4);
+@define-color accent rgba(125, 110, 188, 1);
+
+* {
+    /* vars */
+
+      /* `otf-font-awesome` is required to be installed for icons */
+    font-family: Cascadia Code;
+    font-size: 16px;
+    padding-left:3px;
+    padding-right:3px;
+    background-color: @main-bg;
+    color: @text;
+    border-radius: 20px
+}
+
+/* modules */
+.modules-left{
+  background-color:transparent;
+}
+
+.modules-center{
+  background-color:transparent;
+}
+
+.modules-right{
+  background-color:transparent;
+}
+
+/* bar */ 
+
+window#waybar>box{
+  border-radius:0px;
+  background-color:@bar-bg;
+  padding:10px
+}
+window#waybar {
+    background-color: transparent;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+/* button */
+
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+    /* Avoid rounded borders under each button name */
+    border: none;
+    border-radius: 0;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+    background: inherit;
+    box-shadow: inset 0 -3px @text;
+}
+
+/* window */
+
+#window{
+  background-color: @main-bg;
+  border-radius: 20px;
+}
+
+/* workspace */
+
+#workspaces {
+    margin: 0 4px;
+}
+
+#workspaces box, label {
+  background-color:transparent;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    margin: 3px;
+    color: @text;
+}
+
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.active {
+  background-color: @highlight;
+  border-radius:20px;
+}
+
+#workspaces button.urgent {
+    border-radius:20px;
+    background-color: @accent;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+/* backlight */
+
+#backlight {
+    margin-left:3px;
+    margin-right:0px;
+    background-color: transparent;
+}
+
+#backlight-slider{
+  background-color: @main-bg;
+  border-radius: 20px;
+}
+#backlight-slider slider {
+    min-height: 0px;
+    min-width: 0px;
+    opacity: 0;
+    border: none;
+    box-shadow: none;
+    background-color: @text;
+}
+#backlight-slider trough {
+    min-height: 10px;
+    min-width: 80px;
+    border-radius: 5px;
+    background-color: @main-bg;
+}
+#backlight-slider highlight {
+    min-width: 0px;
+    border-radius: 5px;
+    background-color: @accent;
+}
+
+/* audio */
+
+#pulseaudio {
+    margin-left:3px;
+    margin-right:0px;
+    background-color: transparent;
+    color: @text;
+}
+#pulseaudio.muted {
+    background-color: transparent;
+    color: @text;
+}
+
+#pulseaudio-slider{
+  background-color: @main-bg;
+  border-radius: 20px;
+}
+#pulseaudio-slider slider {
+    min-height: 0px;
+    min-width: 0px;
+    opacity: 0;
+    background-color: @text;
+    border: none;
+    box-shadow: none;
+}
+#pulseaudio-slider trough {
+    min-height: 10px;
+    min-width: 80px;
+    background-color: @main-bg;
+}
+#pulseaudio-slider highlight {
+    min-width: 0px;
+    background-color: @accent;
+}
+
+/* clock */
+
+#clock {
+    padding-left:10px;
+    padding-right:10px;
+    border-radius:20px;
+    margin-left:15px;
+}
+
+/* battery */
+
+#battery {
+  margin-left: 12px;
+    background-color: transparent;
+}
+
+#battery.charging, #battery.plugged {
+    color: @text;
+    background-color: transparent;
+}
+
+@keyframes blink {
+    to {
+        background-color: @text;
+        color: @main-bg;
+    }
+}
+
+/* Using steps() instead of linear as a timing function to limit cpu usage */
+#battery.critical:not(.charging) {
+    border-radius:2px;
+    background-color: @highlight;
+    color: @text;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* battery */
+
+#custom-power{
+  margin-left:12px;
+}
+
+/* network */
+
+#network {
+    background-color: transparent;
+}
+
+#network.disconnected {
+    background-color: transparent;
+}
+
+/* language */
+
+#language {
+    background: @main-bg;
+    border-radius: 20px;
+    padding: 0 5px;
+    margin: 0 5px;
+    min-width: 16px;
+}
