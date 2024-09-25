@@ -6,7 +6,7 @@ lxqt-policykit-agent &
 xrandr --output HMDI-1 --primary
 # wireplumber (sound and io)
 wireplumber &
-# reload pipewire service (weird nixos issue)
+# pipewire bug nixos
 systemctl restart --user pipewire
 # Wallpaper
 swaybg -m fill -i ~/Images/wallpapers/astasis.png &

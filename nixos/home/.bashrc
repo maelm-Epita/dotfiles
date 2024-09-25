@@ -9,5 +9,4 @@ eval "$(fzf --bash)"
 if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
 fi
-
 fastfetch
