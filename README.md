@@ -2,12 +2,12 @@
 
 # <h1 align="center"> My Dotfiles :-) </h1>
 
-## Themes :
-> nixos
-> arch
+## Theme
+### nixos
+### arch
 Themes use shared configurations.
 
-## Shared dotfiles : 
+## Shared dotfiles
 >* btop
 >* cava
 >* fastfetch
@@ -16,7 +16,7 @@ Themes use shared configurations.
 >* nvim
 >* waypaper
 
-## Arch :
+## Arch
 ### **dotfiles**
 >* gtk
 >* hypr
@@ -38,10 +38,10 @@ Themes use shared configurations.
 ## install
 run the make_links.sh script
 ```
-cd dotfiles-arch
-./make_links.sh "{theme_name}"
+cd dotfiles/
+./make_links.sh
 ```
-where {theme_name} is the name of a subdirectory in the dotfiles/ directory
+the name of the available themes are the names of subdirectories in the dotfiles/ directory
 ### Warning : this script is not safe and calls dangerous commands such as rm -rf.
 ### make sure it is able to find all the files it needs to, don't install nixos config onto another distro,
 ### and don't name files anything stupid such as "*" or "/".
