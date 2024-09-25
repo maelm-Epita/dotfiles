@@ -2,28 +2,38 @@
 
 # <h1 align="center"> My Dotfiles :-) </h1>
 
-## **packages configured:**
->* thunar
+## Themes :
+> nixos
+> arch
+Themes use shared configurations.
+
+## Shared dotfiles : 
 >* btop
 >* cava
+>* fastfetch
 >* fcitx
->* foot
->* gtk
->* hyprland
 >* mozc
 >* nvim
->* rofi
->* swaylock
->* wal
->* waybar
 >* waypaper
->* fastfetch
 
-## **dependencies:**
->* alsa, amixer
->* gamastep
->* grimshot
->* backlight_control
+## Arch :
+### **dotfiles**
+>* gtk
+>* hypr
+>* thunar
+>* waybar
+>* bashrc and aliases
+>* sddm
+>* all shared dotfiles
+
+## Nixos : 
+### **dotfiles**
+>* home-manager
+>* hypr
+>* waybar
+>* bashrc and aliases
+>* full nixos config
+>* all shared dotfiles
 
 ## install
 run the make_links.sh script
