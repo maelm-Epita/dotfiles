@@ -19,17 +19,15 @@ fi
 dotconf=($(cd ./.config/ && ls -A ))
 # get all home subdirs and files
 dothome=($(cd ./home/ && ls -A ))
-# go back
-cd..
 
 
 echo ":: .Config files and directories to symlink : ${dotconf[@]}"
 echo ":: Home files and directories to symlink : ${dothome[@]}"
 if [[ "$theme" == "nixos" ]]
 then
-  # get all nixos subdirs and files
-  dotnix=($(cd ./nixos/ && ls -A ))
-  echo ":: Nixos files and directories to symlink : ${dotnix[@]}"
+  # only link flake.nix
+  nix="flake.nix"
+  echo ":: Nixos files and directories to symlink : ${nix[@]}"
 
   if [[ $(id -u) != 0 ]]
   then
@@ -76,7 +74,7 @@ fi
 # declaring backup function to backup if it exists and print it
 bcrmcount=0;
 backup(){
-  if [[ -e "${2}/${1}" ]]
+  if [[ -e "${2}/${1}" || -L "${2}/${1}" ]]
   then
     if [[ ${2} == "/etc/nixos" ]]
     then
