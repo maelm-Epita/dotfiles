@@ -12,7 +12,7 @@
   };
 
   outputs = { self, nixpkgs, nixpkgs-stable, ... }@inputs: {
-    nixosConfigurations.default = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       specialArgs = {
       	inherit inputs;
 	};

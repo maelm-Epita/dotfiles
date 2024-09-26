@@ -1,5 +1,5 @@
 alias ls="ls -A --color=auto"
-alias nix-rs="sudo nixos-rebuild switch --flake /etc/nixos/#default"
-alias nix-update="sudo nixos-rebuild switch --flake /etc/nixos/#default --upgrade"
+alias nix-rs="sudo nixos-rebuild switch"
+alias nix-update="sudo nixos-rebuild switch"
 alias neofetch="fastfetch"
 alias nvim="sudo -E -s nvim"
