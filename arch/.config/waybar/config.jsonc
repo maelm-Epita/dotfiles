@@ -24,7 +24,7 @@
         "custom/power"
     ],
     "clock": {
-        "timezone": "Etc/UTC",
+        "timezone": "Europe/Paris",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
