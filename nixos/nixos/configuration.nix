@@ -62,6 +62,9 @@
 	xwayland.enable = true;
   };
 
+  # use zsh
+  programs.zsh.enable = true;
+
   services.displayManager = {
     defaultSession = "hyprland";
     sddm = {
@@ -73,6 +76,7 @@
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.mael = {
+    shell = pkgs.zsh;
     isNormalUser = true;
     description = "mael";
     extraGroups = [ "networkmanager" "wheel" ];
@@ -96,6 +100,8 @@
     fzf
     zip
     unzip
+    tree
+    starship
     # programming languages related
     gcc
     python3
