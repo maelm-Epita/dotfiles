@@ -1,3 +1,4 @@
 alias ls="ls -A --color=auto"
 alias neofetch="fastfetch"
 alias nvim="sudo -E -s nvim"
+alias tree="git ls-tree | tree || tree"
