@@ -32,6 +32,9 @@ symbol = ""
 disabled = false
 format = "[⏱  took](fg:text) [$duration]($style)"
 style = "fg:iris"
+show_notifications = true
+min_time = 1000
+min_time_to_notify = 30000
 
 [username]
 disabled = false

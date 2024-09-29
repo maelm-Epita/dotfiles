@@ -1,4 +1,3 @@
-eval "$(starship init zsh)"
 
 precmd_functions=(zvm_init "${(@)precmd_functions:#zvm_init}")
 precmd_functions+=(set-long-prompt)
@@ -6,14 +5,12 @@ zvm_after_init_commands+=("zle -N zle-line-finish; zle-line-finish() { set-short
 
 set-long-prompt() {
     PROMPT=$(starship prompt)
-    RPROMPT=""
 }
 
 export COLUMNS=$(($COLUMNS + ($COLUMNS*0.1)))
 set-short-prompt() {
     # setting this doesn't seem to actually work
     PROMPT="$(STARSHIP_KEYMAP=${KEYMAP:-viins} starship module character)"
-    RPROMPT=$'%{\e[999C%}\e[8D%F{8}%*%f ' # remove if you don't want right prompt
     zle .reset-prompt 2>/dev/null # hide the errors on ctrl+c
 }
 
