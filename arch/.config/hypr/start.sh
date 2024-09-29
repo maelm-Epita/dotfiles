@@ -3,7 +3,7 @@
 # polkit authentification
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 # Wallpaper
-swaybg -i ~/Images/wallpapers/yumenikkidark.png &
+swaybg -i ~/Images/wallpapers/yumenikkipurp-var.png &
 # bar
 waybar &
 # dunst 

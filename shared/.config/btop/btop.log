@@ -3,3 +3,6 @@
 2024/09/05 (08:57:19) | ERROR: Couldn't determine terminal size of "STDOUT_FILENO"!
 2024/09/05 (08:57:19) | ERROR: Couldn't determine terminal size of "STDOUT_FILENO"!
 2024/09/05 (08:57:20) | ERROR: Couldn't determine terminal size of "STDOUT_FILENO"!
+
+2024/09/29 (11:34:47) | ===> btop++ v.1.4.0
+2024/09/29 (11:34:47) | WARNING: Intel GPU: Failed to initialize PMU

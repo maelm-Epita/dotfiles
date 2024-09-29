@@ -1,3 +1,6 @@
+# use regular (emacs) keybinds
+bindkey -e
+
 # env variables
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -36,7 +39,7 @@ plugindir="${HOME}/.config/zsh-plugins"
 # autosuggestions
 source $plugindir/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
-bindkey '^@' autosuggest-accept
+bindkey '^ ' autosuggest-accept
 # syntax highlighting
 source $plugindir/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # jump
