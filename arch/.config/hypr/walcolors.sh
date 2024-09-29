@@ -2,4 +2,4 @@
 
 WallpaperPath=$(ps aux | grep 'swaybg' | grep -v 'grep' | awk '{print $13}')
 
-wal -i $WallpaperPath
+wal -i $WallpaperPath --saturate 0.7

@@ -1,7 +1,8 @@
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
-format = "$username(@$hostname) $directory $git_branch \n  [󱞪](fg:iris) "
+#format = "$username(@$hostname) $directory $git_branch \n  [󱞪](fg:iris) "
+format = "$username(@$hostname) $directory $git_branch \n  [⮑](fg:iris) "
 right_format = "$cmd_duration"
 add_newline = true
 palette = "rose-pine"
@@ -17,7 +18,7 @@ iris = '#c4a7e7'
 text = '#e0def4'
 
 [directory]
-format = "[ $path ]($style)"
+format = "[ $path ⛩ ]($style)"
 style = "fg:pine"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -29,12 +30,12 @@ symbol = ""
 
 [cmd_duration]
 disabled = false
-format = "[took](fg:text) [$duration]($style)"
+format = "[⏱  took](fg:text) [$duration]($style)"
 style = "fg:iris"
 
 [username]
 disabled = false
-format = "[ $user]($style)"
+format = "[☞  $user]($style)"
 show_always = true
 style_root = "fg:love"
 style_user = "fg:iris" 
