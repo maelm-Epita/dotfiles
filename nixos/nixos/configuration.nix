@@ -102,11 +102,14 @@
     unzip
     tree
     starship
+    tree-sitter
     # programming languages related
     gcc
     python3
     nodePackages_latest.npm
     nodejs_22
+    # get latex
+    python312Packages.pylatexenc
     # daily use
     vesktop
     firefox
@@ -158,9 +161,9 @@
     pywal
   ];
 
-  fonts.packages = with pkgs; [
+  sansonts.packages = with pkgs; [
       noto-fonts
-      noto-fonts-cjk
+      noto-fonts-cjk-sans
       noto-fonts-emoji
       cascadia-code
   ];

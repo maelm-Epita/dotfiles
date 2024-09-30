@@ -20,6 +20,8 @@ vim.keymap.set('n', '<C-d>', vim.diagnostic.open_float)
 -- terminal
 vim.keymap.set('n', '<leader>tt', ':terminal<CR>')
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')
+-- markdown
+vim.keymap.set('n', '<leader>md', ':RenderMarkdown toggle<CR>')
 
 -- lazy
 require("config.lazy")
