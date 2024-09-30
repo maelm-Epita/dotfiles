@@ -108,6 +108,7 @@
     python3
     nodePackages_latest.npm
     nodejs_22
+    yarn
     # get latex
     python312Packages.pylatexenc
     # daily use
@@ -161,7 +162,7 @@
     pywal
   ];
 
-  sansonts.packages = with pkgs; [
+  fonts.packages = with pkgs; [
       noto-fonts
       noto-fonts-cjk-sans
       noto-fonts-emoji

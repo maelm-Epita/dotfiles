@@ -20,8 +20,13 @@ vim.keymap.set('n', '<C-d>', vim.diagnostic.open_float)
 -- terminal
 vim.keymap.set('n', '<leader>tt', ':terminal<CR>')
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')
--- markdown
-vim.keymap.set('n', '<leader>md', ':RenderMarkdown toggle<CR>')
+-- setup markdown preview
+vim.cmd([[
+  function OpenMarkdownPreview (url)
+    execute "! firefox --new-window " . a:url
+  endfunction
+  let g:mkdp_browserfunc = 'OpenMarkdownPreview'
+]])
 
 -- lazy
 require("config.lazy")

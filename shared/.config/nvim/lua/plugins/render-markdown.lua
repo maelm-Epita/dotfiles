@@ -33,6 +33,7 @@ return {
         -- Amount of empty lines below LaTeX blocks
         bottom_pad = 0,
         left_pad = 0,
+	vim.keymap.set('n', '<leader>md', ':RenderMarkdown toggle<CR>')
       },
     })
   end

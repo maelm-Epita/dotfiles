@@ -1,5 +1,5 @@
 alias ls="ls -A --color=auto"
 alias neofetch="fastfetch"
-alias nvim="sudo -E -s nvim"
+alias nv="sudo -E -s nvim"
 alias nix-rs="sudo nixos-rebuild switch"
 alias nix-update="sudo nixos-rebuild switch"
