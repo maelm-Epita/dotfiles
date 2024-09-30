@@ -1,5 +1,6 @@
 alias ls="ls -A --color=auto"
 alias neofetch="fastfetch"
-alias nv="sudo -E -s nvim"
+alias snv="sudo -E -s nvim"
+alias nix-conf="snv ~/Git/dotfiles/nixos/nixos/configuration.nix"
 alias nix-rs="sudo nixos-rebuild switch"
 alias nix-update="sudo nixos-rebuild switch"
