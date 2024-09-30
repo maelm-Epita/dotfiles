@@ -6,6 +6,12 @@ vim.cmd("set shiftwidth=2")
 -- relativenb
 vim.cmd("se rnu!")
 vim.cmd("se nu!")
+-- folding settings
+vim.opt.fillchars = {fold = " "}
+vim.opt.foldmethod = "indent"
+vim.opt.foldenable = false
+vim.opt.foldlevel = 99
+vim.cmd("let g:markdown_folding = 1")
 
 -- remaps
 vim.cmd("let mapleader = ' '")
@@ -20,13 +26,29 @@ vim.keymap.set('n', '<C-d>', vim.diagnostic.open_float)
 -- terminal
 vim.keymap.set('n', '<leader>tt', ':terminal<CR>')
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')
+-- fold
+vim.keymap.set('n', ',', 'za')
+
+
+-- functions 
 -- setup markdown preview
 vim.cmd([[
   function OpenMarkdownPreview (url)
-    execute "! firefox --new-window " . a:url
+    silent execute "! firefox --new-window " . a:url
   endfunction
   let g:mkdp_browserfunc = 'OpenMarkdownPreview'
 ]])
+-- auto cmds
+vim.api.nvim_create_autocmd({"BufWinLeave"}, {
+  pattern = {"*.*"},
+  desc = "save view (folds), when closing file",
+  command = "mkview",
+})
+vim.api.nvim_create_autocmd({"BufWinEnter"}, {
+  pattern = {"*.*"},
+  desc = "load view (folds), when opening file",
+  command = "silent! loadview"
+})
 
 -- lazy
 require("config.lazy")
