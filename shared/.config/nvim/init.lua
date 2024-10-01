@@ -34,7 +34,7 @@ vim.keymap.set('n', ',', 'za')
 -- setup markdown preview
 vim.cmd([[
   function OpenMarkdownPreview (url)
-    silent execute "! firefox --new-window " . a:url
+    silent execute "! firefox --new-window " . a:url . "& disown"
   endfunction
   let g:mkdp_browserfunc = 'OpenMarkdownPreview'
 ]])
