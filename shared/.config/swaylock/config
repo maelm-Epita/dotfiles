@@ -2,19 +2,19 @@ ignore-empty-password
 show-failed-attempts
 indicator-idle-visible
 font=Cascadia Code
-font-size=25
+font-size=35
 
 clock
 timestr=%R
 datestr=%a %e, %B
 
 screenshots
-effect-blur=2x5
+effect-blur=5x10
 effect-scale=1
 
 indicator
-indicator-radius=125
-indicator-thickness=15
+indicator-radius=160
+indicator-thickness=22
 indicator-caps-lock
 
 separator-color=e0def4FF
