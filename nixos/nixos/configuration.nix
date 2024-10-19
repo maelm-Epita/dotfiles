@@ -125,7 +125,7 @@
     rofi-wayland
     nemo
     waybar
-    swaylock
+    swaylock-effects
     waypaper
     swaybg
     lxqt.pavucontrol-qt

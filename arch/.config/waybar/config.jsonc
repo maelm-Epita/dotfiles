@@ -102,7 +102,7 @@
 			"shutdown": "shutdown now",
 			"reboot": "reboot",
 			"suspend": "systemctl suspend",
-			"lock": "swaylock --config ../../../shared/.config/swaylock/config"
+			"lock": "swaylock"
 		}
   }
 }
