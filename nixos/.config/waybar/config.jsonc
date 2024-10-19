@@ -100,7 +100,8 @@
 			"shutdown": "shutdown now",
 			"reboot": "reboot",
 			"suspend": "systemctl suspend",
-			"lock": "swaylock --screenshots --ignore-empty-password --daemonize --indicator-caps-lock --indicator --clock --timestr \"%Hh %Mm %Ss\" --datestr \"%b-%d-%Y\" --show-failed-attempts --indicator-idle-visible"
+			//"lock": "swaylock --screenshots --ignore-empty-password --daemonize --indicator-caps-lock --indicator --clock --show-failed-attempts --indicator-idle-visible"
+			"lock": "swaylock --config ../../../shared/.config/swaylock/config"
 		}
   }
 }
