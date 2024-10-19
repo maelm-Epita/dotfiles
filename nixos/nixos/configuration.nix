@@ -103,6 +103,7 @@
     tree
     starship
     tree-sitter
+    ntfs3g
     # programming languages related
     gcc
     python3
@@ -117,12 +118,12 @@
     foot
     # recording / editing software
     obs-studio
-    davinci-resolve
+    libsForQt5.kdenlive
     gimp
     handbrake
     # desktop environment things
     rofi-wayland
-    xfce.thunar
+    nemo
     waybar
     swaylock
     waypaper
@@ -130,6 +131,10 @@
     lxqt.pavucontrol-qt
     # automount disks
     udiskie
+    gnome-disk-utility
+    # mount iphone
+    libimobiledevice
+    ifuse
     # make ntfs disks work propely
     ntfs3g
     # image
@@ -203,6 +208,10 @@
   };
 
   services.udisks2.enable = true;
+  services.usbmuxd = {
+  enable = true;
+  package = pkgs.usbmuxd2;
+  };
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.

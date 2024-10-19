@@ -39,7 +39,7 @@ plugindir="${HOME}/.config/zsh-plugins"
 # autosuggestions
 source $plugindir/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
-bindkey '^ ' autosuggest-accept
+bindkey '^n' autosuggest-accept
 # syntax highlighting
 source $plugindir/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # jump
