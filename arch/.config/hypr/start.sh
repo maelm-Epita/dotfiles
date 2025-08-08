@@ -7,4 +7,8 @@ swaybg -i ~/Images/wallpapers/yumenikkipurp-var.png &
 # bar
 waybar &
 # dunst 
-dunst 
+dunst &
+# japanese mining ocr
+transformers_ocr listen &
+# japanese keyboard
+fcitx

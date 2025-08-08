@@ -76,10 +76,10 @@ Bosnian:ba:Bosnian (with Bosnian digraphs):unicode:
 Bosnian:ba:Bosnian (US, with Bosnian digraphs):unicodeus:
 Bosnian:ba:Bosnian (US):us:
 Braille:brai:
-Braille:brai:Braille (left-handed):left_hand:
-Braille:brai:Braille (left-handed inverted thumb):left_hand_invert:
-Braille:brai:Braille (right-handed):right_hand:
-Braille:brai:Braille (right-handed inverted thumb):right_hand_invert:
+Braille:brai:Braille (one-handed, left):left_hand:
+Braille:brai:Braille (one-handed, left, inverted thumb):left_hand_invert:
+Braille:brai:Braille (one-handed, right):right_hand:
+Braille:brai:Braille (one-handed, right, inverted thumb):right_hand_invert:
 Bulgarian:bg:
 Bulgarian:bg:Bulgarian (traditional phonetic):phonetic:
 Bulgarian:bg:Bulgarian (new phonetic):bas_phonetic:
@@ -192,8 +192,8 @@ English (US):us:English (Colemak-DH Wide ISO):colemak_dh_wide_iso:
 English (US):us:English (Dvorak):dvorak:
 English (US):us:English (Dvorak, intl., with dead keys):dvorak-intl:
 English (US):us:English (Dvorak, alt. intl.):dvorak-alt-intl:
-English (US):us:English (Dvorak, left-handed):dvorak-l:
-English (US):us:English (Dvorak, right-handed):dvorak-r:
+English (US):us:English (Dvorak, one-handed, left):dvorak-l:
+English (US):us:English (Dvorak, one-handed, right):dvorak-r:
 English (US):us:English (classic Dvorak):dvorak-classic:
 English (US):us:English (programmer Dvorak):dvp:
 English (US):us:English (Dvorak, Macintosh):dvorak-mac:
@@ -324,6 +324,7 @@ German:de:German (Bone):bone:
 German:de:German (Bone, eszett in the home row):bone_eszett_home:
 German:de:German (Neo, QWERTZ):neo_qwertz:
 German:de:German (Neo, QWERTY):neo_qwerty:
+German:de:German (Noted):noted:
 German:de:Russian (Germany, recommended):ru-recom:
 German:de:Russian (Germany, transliteration):ru-translit:
 German (Austria):at:
@@ -450,7 +451,6 @@ Italian:it:Ladin (German keyboard):lldde:
 Italian:it:Italian (Dvorak):dvorak:
 Japanese:jp:
 Japanese:jp:Japanese (Kana):kana:
-Japanese:jp:Japanese (Kana 86):kana86:
 Japanese:jp:Japanese (OADG 109A):OADG109A:
 Japanese:jp:Japanese (Macintosh):mac:
 Japanese:jp:Japanese (Dvorak):dvorak:
@@ -618,6 +618,9 @@ Russian:ru:Russian (Polyglot and Reactionary):prxn:
 Russian:ru:Russian (Programmer):winkeys-p:
 Russian:ru:Russian (plus typographic symbols):typo:
 Russian:ru:Russian (plus Tatar letters):rtu:
+Russian:ru:Russian (Diktor):diktor:
+Russian:ru:Russian (international, RU):ruintl_ru:
+Russian:ru:Russian (international, EN):ruintl_en:
 Serbian:rs:
 Serbian:rs:Serbian (Cyrillic, with guillemets):alternatequotes:
 Serbian:rs:Serbian (Cyrillic, ZE and ZHE swapped):yz:
@@ -662,6 +665,7 @@ Swedish:se:Swedish (no dead keys):nodeadkeys:
 Swedish:se:Swedish (Dvorak):dvorak:
 Swedish:se:Swedish (Dvorak, intl.):us_dvorak:
 Swedish:se:Swedish (Svdvorak):svdvorak:
+Swedish:se:Swedish (Colemak):colemak:
 Swedish:se:Swedish (Macintosh):mac:
 Swedish:se:Swedish (US):us:
 Swedish:se:Swedish Sign Language:swl:

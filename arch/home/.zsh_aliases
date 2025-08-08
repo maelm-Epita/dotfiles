@@ -1,3 +1,5 @@
 alias ls="ls -A --color=auto"
 alias neofetch="fastfetch"
 alias snv="sudo -E -s nvim"
+alias mca="make clean all"
+alias rb="mca && ./main"
