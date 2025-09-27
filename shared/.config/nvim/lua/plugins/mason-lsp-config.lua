@@ -9,7 +9,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "clangd", "lua_ls", "pylsp", "html", "ts_ls", "bashls", "intelephense", "rust-analyzer" },
+        ensure_installed = { "clangd", "lua_ls", "pylsp", "html", "ts_ls", "bashls", "intelephense", "rust_analyzer" },
         auto_install = true
       })
     end
