@@ -18,6 +18,23 @@ return {
     "neovim/nvim-lspconfig",
     config = function()
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
+      vim.lsp.config('clangd', {capabilities = capabilities})
+      vim.lsp.config('lua_ls', {capabilities = capabilities})
+      vim.lsp.config('pylsp', {capabilities = capabilities})
+      vim.lsp.config('html', {capabilities = capabilities})
+      vim.lsp.config('ts_ls', {capabilities = capabilities})
+      vim.lsp.config('bashls', {capabilities = capabilities})
+      vim.lsp.config('intelephense', {capabilities = capabilities})
+      vim.lsp.config('rust_analyzer', {capabilities = capabilities})
+      vim.lsp.enable('clangd')
+      vim.lsp.enable('lua_ls')
+      vim.lsp.enable('pylsp')
+      vim.lsp.enable('html')
+      vim.lsp.enable('ts_ls')
+      vim.lsp.enable('bashls')
+      vim.lsp.enable('intelephense')
+      vim.lsp.enable('rust_analyzer')
+      --[[
       local lspconfig = require("lspconfig")
       lspconfig.clangd.setup({capabilities = capabilities}) -- c
       lspconfig.lua_ls.setup({capabilities = capabilities}) -- lua
@@ -27,6 +44,7 @@ return {
       lspconfig.bashls.setup({capabilities = capabilities}) -- bash
       lspconfig.intelephense.setup({capabilities = capabilities}) -- php
       lspconfig.rust_analyzer.setup({capabilities = capabilities}) -- rust
+      ]]
 
       vim.diagnostic.config({
         virtual_text = true,
