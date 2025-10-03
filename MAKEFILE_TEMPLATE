@@ -1,0 +1,50 @@
+CC=gcc
+
+INCLUDEPATH=-I/nix/store/nxk04vxjn7dc0mlpiq9srcg8naimniwj-criterion-2.4.2-dev/include/ -Iinclude/
+
+CFLAGS=-std=c99 -pedantic -Werror -Wall -Wextra -Wvla
+DEBUGFLAGS=-fsanitize=address -g
+TESTSUITELD=-lcriterion
+
+TARGETDIR=build
+SRCDIR=src
+TARGETNAME=main
+TARGET:=$(TARGETDIR)/$(TARGETNAME)
+DEBUG:=$(TARGETDIR)/debug
+TESTSUITE:=$(TARGETDIR)/tests
+
+SRCFILES=$(shell ls $(SRCDIR) | grep -v $(TARGETNAME))
+TESTFILES:=$(shell ls tests)
+
+SRC:=$(addprefix $(SRCDIR)/, $(SRCFILES))
+TESTSRC:=$(addprefix tests/, $(TESTFILES))
+MAINSRC:=$(addprefix $(SRCDIR)/, $(TARGETNAME).c)
+
+OBJ:=$(SRCFILES:.c=.o)
+OBJTEST:=$(TESTFILES:.c=.o)
+OBJMAIN:=$(TARGETNAME).o
+
+all: debug
+
+main:
+	$(CC) $(SRC) $(MAINSRC) $(CFLAGS) -o $(TARGET)
+
+debug: $(OBJ) $(OBJMAIN)
+	$(CC) $(DEBUGFLAGS) -o $(DEBUG) $(TESTSUITELD) $(OBJ) $(TARGETNAME).o
+
+testsuite: $(OBJ) $(OBJTEST)
+	$(CC) $(CFLAGS) $(DEBUGFLAGS) $(TESTSUITELD) $(INCLUDEPATH) $(OBJ) $(OBJTEST) -o $(TESTSUITE)
+
+$(OBJ): $(SRC)
+	$(CC) $(CFLAGS) $(INCLUDEPATH) $(DEBUGFLAGS) -c $^
+
+$(OBJTEST): $(TESTSRC)
+	$(CC) $(CFLAGS) $(INCLUDEPATH) $(DEBUGFLAGS) -c $^
+
+$(OBJMAIN): $(MAINSRC)
+	$(CC) $(CFLAGS) $(INCLUDEPATH) $(DEBUGFLAGS) -c $^
+
+.PHONY: clean
+
+clean:
+	$(RM) $(TARGET) $(DEBUG) $(TESTSUITE) $(OBJ) $(OBJTEST) $(OBJMAIN)
